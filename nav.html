@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GFG</title>
+<style>
+body
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  background:white;padding:8px 20px;border-bottom:1px solid white;
+}
+.logo{
+  display:flex;align-items:center;gap:10px;
+}
+.logo img{
+  width:40px;height:40px;
+}
+.search-box{
+  display:flex;align-items:center;background:#f9fffc;
+  border:1px solid #cde8d8;border-radius:20px;padding:4px 10px;width:300px;
+}
+.search-box input{
+  border:none;outline:none;background:transparent;
+  width:100%;padding:6px;
+}
+.menu{
+  display:flex;align-items:center;gap:20px;
+  font-weight:600;color:black;
+}
+.menu div{position:relative;cursor:pointer;}
+.menu div:hover .dropdown{display:block;}
+.dropdown{
+  display:none;position:absolute;top:28px;left:0;
+  background:white;border:1px solid:white;border-radius:6px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);padding:8px;min-width:140px;
+}
+.dropdown a{
+  display:block;text-decoration:none;color:#333;
+  padding:6px 8px;border-radius:4px;
+}
+.dropdown a:hover{background:white;}
+.icons{
+  display:flex;align-items:center;gap:10px;
+}
+.icons button, .signin{
+  border:none;background:transparent;cursor:pointer;
+}
+.signin{
+  background:black;color:white;padding:6px 14px;
+  border-radius:6px;font-weight:600;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="GFG Logo">
+    <div class="search-box">
+      🔍 <input type="text" placeholder="Search...">
+    </div>
+  </div>
+
+  <div class="menu">
+    <div>Courses 
+      <div class="dropdown">
+        <a href="#">DSA Course</a>
+        <a href="#">Web Dev</a>
+        <a href="#">Machine Learning</a>
+      </div>
+    </div>
+    <div>Tutorials 
+      <div class="dropdown">
+        <a href="#">C++</a>
+        <a href="#">Java</a>
+        <a href="#">Python</a>
+      </div>
+    </div>
+    <div>Practice
+      <div class="dropdown">
+        <a href="#">Problems</a>
+        <a href="#">Contests</a>
+      </div>
+    </div>
+    <div>Jobs
+      <div class="dropdown">
+        <a href="#">Internships</a>
+        <a href="#">Placement</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="icons">
+    <button title="Dark mode">🌙</button>
+    <button title="Notifications">🔔</button>
+    <button class="signin">Sign In</button>
+  </div>
+</nav>
+</body>
+</html>
+
